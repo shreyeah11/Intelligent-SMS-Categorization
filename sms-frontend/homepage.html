@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "personal": "#3b82f6", // Blue
+              "transactions": "#10b981", // Green
+              "promotions": "#8b5cf6", // Purple
+              "spam": "#ef4444", // Red
+              "starred": "#f97316", // Orange
+            },
+            fontFamily: {
+              "display": ["Inter"],
+            },
+            borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="bg-background-light dark:bg-background-dark sticky top-0 z-10 px-4 pt-6 pb-2">
+<div class="flex items-center justify-between">
+<h1 class="text-3xl font-bold text-slate-800 dark:text-white">Inbox</h1>
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined"> settings </span>
+</button>
+</div>
+<div class="mt-4 overflow-x-auto">
+<nav class="flex border-b border-slate-200 dark:border-slate-700">
+<a class="flex-shrink-0 border-b-2 border-primary px-4 py-2.5 text-sm font-semibold text-primary" href="#">All</a>
+<a class="flex-shrink-0 border-b-2 border-transparent px-4 py-2.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-personal" href="personal.html">Personal</a>
+<a class="flex-shrink-0 border-b-2 border-transparent px-4 py-2.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-transactions" href="transactions.html">Transactions</a>
+<a class="flex-shrink-0 border-b-2 border-transparent px-4 py-2.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-promotions" href="promotions.html">Promotions</a>
+<a class="flex-shrink-0 border-b-2 border-transparent px-4 py-2.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-spam" href="spam.html">Spam</a>
+</nav>
+</div>
+</header>
+<main class="p-4">
+  <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <a href="personal.html" class="group relative p-6 flex flex-col items-center justify-center rounded-xl bg-background-light dark:bg-background-dark shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-slate-200 dark:border-slate-700">
+      <div class="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-personal/20 text-personal transition-all duration-300 ease-in-out group-hover:scale-110">
+        <span class="material-symbols-outlined text-4xl"> person </span>
+      </div>
+      <p class="text-lg font-semibold text-slate-800 dark:text-white">Personal</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">12 new</p>
+      <span class="absolute top-4 right-4 h-2.5 w-2.5 rounded-full bg-personal"></span>
+    </a>
+  <a href="transactions.html" class="group relative p-6 flex flex-col items-center justify-center rounded-xl bg-background-light dark:bg-background-dark shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-slate-200 dark:border-slate-700">
+      <div class="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-transactions/20 text-transactions transition-all duration-300 ease-in-out group-hover:scale-110">
+        <span class="material-symbols-outlined text-4xl"> credit_card </span>
+      </div>
+      <p class="text-lg font-semibold text-slate-800 dark:text-white">Transactions</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">3 new</p>
+      <span class="absolute top-4 right-4 h-2.5 w-2.5 rounded-full bg-transactions"></span>
+    </a>
+  <a href="promotions.html" class="group relative p-6 flex flex-col items-center justify-center rounded-xl bg-background-light dark:bg-background-dark shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-slate-200 dark:border-slate-700">
+      <div class="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-promotions/20 text-promotions transition-all duration-300 ease-in-out group-hover:scale-110">
+        <span class="material-symbols-outlined text-4xl"> campaign </span>
+      </div>
+      <p class="text-lg font-semibold text-slate-800 dark:text-white">Promotions</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">5 new</p>
+      <span class="absolute top-4 right-4 h-2.5 w-2.5 rounded-full bg-promotions"></span>
+    </a>
+  <a href="spam.html" class="group relative p-6 flex flex-col items-center justify-center rounded-xl bg-background-light dark:bg-background-dark shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-slate-200 dark:border-slate-700">
+      <div class="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-spam/20 text-spam transition-all duration-300 ease-in-out group-hover:scale-110">
+        <span class="material-symbols-outlined text-4xl"> security </span>
+      </div>
+      <p class="text-lg font-semibold text-slate-800 dark:text-white">Spam</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">2 new</p>
+      <span class="absolute top-4 right-4 h-2.5 w-2.5 rounded-full bg-spam"></span>
+    </a>
+    <a href="#" class="group relative p-6 flex flex-col items-center justify-center rounded-xl bg-background-light dark:bg-background-dark shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-slate-200 dark:border-slate-700">
+      <div class="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-starred/20 text-starred transition-all duration-300 ease-in-out group-hover:scale-110">
+        <span class="material-symbols-outlined text-4xl"> star </span>
+      </div>
+      <p class="text-lg font-semibold text-slate-800 dark:text-white">Starred</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">1 new</p>
+      <span class="absolute top-4 right-4 h-2.5 w-2.5 rounded-full bg-starred"></span>
+    </a>
+  </div>
+</main>
+</div>
+
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800">
+<nav class="flex justify-around px-2 py-1.5">
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg px-4 py-2 text-primary bg-primary/10" href="#">
+<span class="material-symbols-outlined"> inbox </span>
+<p class="text-xs font-bold">Inbox</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg px-4 py-2 text-slate-500 dark:text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined"> category </span>
+<p class="text-xs font-medium">Categories</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg px-4 py-2 text-slate-500 dark:text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined"> search </span>
+<p class="text-xs font-medium">Search</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 rounded-lg px-4 py-2 text-slate-500 dark:text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined"> settings </span>
+<p class="text-xs font-medium">Settings</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
