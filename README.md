@@ -72,11 +72,11 @@ pip install -r requirements.txt
 
 You can customize:
 
-🧠 ML algorithms (Naive Bayes, Logistic Regression, SVM, Decision Tree)
-📊 Feature extraction techniques (Bag-of-Words, TF-IDF)
-📁 SMS categories
-⚙️ Model parameters and thresholds
-🌍 Dataset language and size
+🧠 Machine learning algorithms (Naive Bayes, Logistic Regression, SVM, Decision Tree)  
+📊 Feature extraction methods (Bag-of-Words, TF-IDF)  
+📁 SMS categories and priority rules  
+⚙️ Model parameters and training settings  
+🌍 Dataset size and language support  
 ---
 
 ## 📌 Purpose of This Project
