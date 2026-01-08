@@ -70,13 +70,12 @@ pip install -r requirements.txt
 ---
 ## 🎨 Customization
 
-You can customize:
+- 🧠 **ML Algorithms**: Naive Bayes, Logistic Regression, SVM, Decision Tree  
+- 📊 **Feature Extraction**: Bag-of-Words, TF-IDF  
+- 📁 **SMS Categories**: Personal, Transactions, Promotions, Star, Spam  
+- ⚙️ **Model Settings**: Training parameters and thresholds  
+- 🌍 **Dataset**: Size and language support  
 
-🧠 Machine learning algorithms (Naive Bayes, Logistic Regression, SVM, Decision Tree)  
-📊 Feature extraction methods (Bag-of-Words, TF-IDF)  
-📁 SMS categories and priority rules  
-⚙️ Model parameters and training settings  
-🌍 Dataset size and language support  
 ---
 
 ## 📌 Purpose of This Project
