@@ -33,7 +33,7 @@ This project was developed as part of an **academic seminar** in the **Machine L
 
 ## 📸 Screenshot
 
-[![SMS Categorization UI](assets/screenshot.png)](assets/screenshot.png)  
+[![SMS Categorization UI](screenshot4.png)](screenshot4.png)  
 *Click the screenshot to view full size.*
 
 ---
